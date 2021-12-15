@@ -8,7 +8,7 @@ int main()
     int n;
     userInput.assign(5,10);
     
-    for(int i=0; i<userInput.crbegin; i++)
+    for(int i=0; i<userInput.size(); i++)
     {
         cout<<userInput[i];
       
