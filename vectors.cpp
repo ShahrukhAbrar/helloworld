@@ -5,15 +5,16 @@ using namespace std;
 int main()
 {
     vector<int> userInput;
-    int n;
-    userInput.assign(5,10);
+    int n; int x;
     
-    for(int i=0; i<userInput.size(); i++)
+    
+
+    for(int i=0; i<20; i++)
     {
         cout<<userInput[i];
       
     }
-
+    
    
 
 }
