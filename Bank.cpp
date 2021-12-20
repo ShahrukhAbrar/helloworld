@@ -9,8 +9,8 @@ using namespace std;
 
 
 
-class account
-{
+
+
 	int acno;
 	char name[50];
 	int deposit;
@@ -25,9 +25,8 @@ public:
 	int retacno() const;	//function to return account number
 	int retdeposit() const;	//function to return balance amount
 	char rettype() const;	//function to return type of account
-};         //class ends here
-
-void account::create_account()
+        //class ends here
+void create_account()
 {
 	cout<<"\nEnter The account No. :";
 	cin>>acno;
@@ -42,7 +41,7 @@ void account::create_account()
 	cout<<"\n\n\nAccount Created..";
 }
 
-void account::show_account() const
+void show_account() const
 {
 	cout<<"\nAccount No. : "<<acno;
 	cout<<"\nAccount Holder Name : ";
@@ -52,7 +51,7 @@ void account::show_account() const
 }
 
 
-void account::modify()
+void modify()
 {
 	cout<<"\nAccount No. : "<<acno;
 	cout<<"\nModify Account Holder Name : ";
@@ -66,33 +65,33 @@ void account::modify()
 }
 
 	
-void account::dep(int x)
+void dep(int x)
 {
 	deposit+=x;
 }
 	
-void account::draw(int x)
+void draw(int x)
 {
 	deposit-=x;
 }
 	
-void account::report() const
+void report() const
 {
 	cout<<acno<<setw(10)<<" "<<name<<setw(10)<<" "<<type<<setw(6)<<deposit<<endl;
 }
 
 	
-int account::retacno() const
+int retacno() const
 {
 	return acno;
 }
 
-int account::retdeposit() const
+int retdeposit() const
 {
 	return deposit;
 }
 
-char account::rettype() const
+char rettype() const
 {
 	return type;
 }
